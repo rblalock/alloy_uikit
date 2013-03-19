@@ -1,0 +1,14 @@
+{
+    "global": {
+        "theme": "uikit",
+        "uikit": {}
+    },
+    "env:development": {},
+    "env:test": {},
+    "env:production": {},
+    "os:ios": {},
+    "os:android": {},
+    "dependencies": {
+        "uikit": "1.0"
+    }
+}

@@ -1,0 +1,24 @@
+"#textfield": {
+	styles: {
+		textfield: {
+			width: 300,
+            hintText: "textfield widget"
+		}
+	}
+},
+"#customTextfield": {
+	styles: {
+		textfield: {
+			width: 300,
+			top: 5,
+			bottom: 5,
+            hintText: "overriden textfield",
+            backgroundColor: "#111",
+            color: "#eee"
+		}
+	},
+	textfieldFocused: {
+		backgroundColor: "#eee",
+		color: "red"
+	}
+}

@@ -1,0 +1,26 @@
+<Alloy>
+	<Window id="window">
+		<ScrollView layout="vertical" top="10" right="10" bottom="10" left="10">
+			<!--Headings-->
+			<Label class="uikit_h5 uikit_mute">headings.</Label>
+
+			<Label class="uikit_h1">Heading 1</Label>
+			<Label class="uikit_h2">Heading 2</Label>
+			<Label class="uikit_h3">Heading 3</Label>
+			<Label class="uikit_h4">Heading 4</Label>
+			<Label class="uikit_h5">Heading 5</Label>
+			<Label class="uikit_h6">Heading 6</Label>
+
+			<View class="spacer" />
+
+			<!--Label Styles-->
+			<Label class="uikit_h5 uikit_mute">label styles.</Label>
+
+			<Label class="uikit_mute">Nullam quis risus eget urna mollis ornare.</Label>
+			<Label class="uikit_warning">Nullam quis risus eget urna mollis ornare.</Label>
+			<Label class="uikit_error">Nullam quis risus eget urna mollis ornare.</Label>
+			<Label class="uikit_info">Nullam quis risus eget urna mollis ornare.</Label>
+			<Label class="uikit_success">Nullam quis risus eget urna mollis ornare.</Label>
+		</ScrollView>
+	</Window>
+</Alloy>

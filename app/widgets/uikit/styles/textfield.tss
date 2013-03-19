@@ -1,0 +1,14 @@
+"#textfield": {
+	height: 44,
+	backgroundColor: "#fff",
+	color: "#111",
+	paddingLeft: 10,
+	paddingRight: 10,
+	font: {
+		fontSize: 14
+	}
+},
+"#textfield[platform=ios]": {
+	clearButtonMode: Ti.UI.INPUT_BUTTONMODE_ONFOCUS,
+	rightButtonMode: Ti.UI.INPUT_BUTTONMODE_ONFOCUS
+}

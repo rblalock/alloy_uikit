@@ -1,0 +1,65 @@
+// BEGIN TYPOGRAPHY
+"Label": {
+	font: {
+		fontFamily: "HelveticaNeue"
+	}
+},
+".uikit_h1": {
+	font: {
+		fontSize: 38,
+		fontWeight: "bold",
+		fontFamily: "Montserrat-Bold"
+	}
+},
+".uikit_h2": {
+	font: {
+		fontSize: 32,
+		fontWeight: "bold",
+		fontFamily: "Montserrat-Bold"
+	}
+},
+".uikit_h3": {
+	font: {
+		fontSize: 24,
+		fontWeight: "bold",
+		fontFamily: "Montserrat-Bold"
+	}
+},
+".uikit_h4": {
+	font: {
+		fontSize: 16,
+		fontWeight: "bold",
+		fontFamily: "Montserrat-Bold"
+	}
+},
+".uikit_h5": {
+	font: {
+		fontSize: 14,
+		fontWeight: "bold",
+		fontFamily: "Montserrat-Bold"
+	}
+},
+".uikit_h6": {
+	font: {
+		fontSize: 11,
+		fontWeight: "bold",
+		fontFamily: "Montserrat-Bold"
+	}
+},
+// Label styles
+".uikit_mute": {
+	color: "#999"
+},
+".uikit_warning": {
+	color: "#c09853"
+},
+".uikit_error": {
+	color: "#b94a48"
+},
+".uikit_info": {
+	color: "#3a87ad"
+},
+".uikit_success": {
+	color: "#468847"
+}
+// END TYPOGRAPHY

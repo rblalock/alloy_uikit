@@ -1,0 +1,5 @@
+"Label": {
+	textAlign: "left",
+	width: Ti.UI.SIZE,
+	left: 0
+}

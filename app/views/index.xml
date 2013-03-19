@@ -1,0 +1,8 @@
+<Alloy>
+	<Window id="window">
+		<TableView id="table">
+			<TableViewRow title="Typography" id="typography" />
+			<TableViewRow title="Elements" id="elements" />
+		</TableView>
+	</Window>
+</Alloy>

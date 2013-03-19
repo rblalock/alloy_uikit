@@ -1,0 +1,6 @@
+"Window": {
+	backgroundColor: "#ebe7df"
+},
+".spacer": {
+	height: 20,
+}
