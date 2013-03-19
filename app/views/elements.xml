@@ -10,7 +10,8 @@
 			<Widget id="textfield" src="uikit" name="textfield" />
 			<Widget id="customTextfield" src="uikit" name="textfield" />
 
-			<View class="spacer" />
+			<!-- Spinner widget -->
+			<Widget id="spinner" src="uikit" name="spinner" />
 		</ScrollView>
 	</Window>
 </Alloy>

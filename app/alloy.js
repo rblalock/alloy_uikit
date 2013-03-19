@@ -9,6 +9,11 @@ Alloy.createWidget = function(id, name, args) {
 
 	var widget = new (require("alloy/widgets/" + id + "/controllers/" + (name || DEFAULT_WIDGET)))(args);
 
+	// For UIKit controllers
+	if(widget.setUIKitDefaults) {
+		widget.setUIKitDefaults();
+	}
+	
 	// Workaround for styling widgets until the feature is implemented in Alloy
 	if (args.styles) {
 		for(var property in args.styles) {

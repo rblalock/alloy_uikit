@@ -1,7 +1,6 @@
 {
     "global": {
-        "theme": "uikit",
-        "uikit": {}
+        "theme": "uikit"
     },
     "env:development": {},
     "env:test": {},

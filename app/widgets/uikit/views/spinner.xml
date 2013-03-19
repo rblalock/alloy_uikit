@@ -1,0 +1,6 @@
+<Alloy>
+	<View id="wrapper">
+		<TextField id="textfield" />
+		<View id="stepperWrapper" />
+	</View>
+</Alloy>

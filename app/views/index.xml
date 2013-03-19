@@ -2,7 +2,8 @@
 	<Window id="window">
 		<TableView id="table">
 			<TableViewRow title="Typography" id="typography" />
-			<TableViewRow title="Elements" id="elements" />
+			<TableViewRow title="Elements - Light" id="elements" />
+			<TableViewRow title="Elements - Dark" id="elementsDark" />
 		</TableView>
 	</Window>
 </Alloy>

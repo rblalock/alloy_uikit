@@ -1,0 +1,20 @@
+"#wrapper": {
+	width: Ti.UI.SIZE,
+	height: 44
+},
+"#textfield": {
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+	paddingLeft: 10,
+	paddingRight: 42,
+	keyboardType: Ti.UI.KEYBOARD_NUMBER_PAD,
+	font: {
+		fontSize: 14
+	}
+}
+"#stepperWrapper": {
+	width: 22,
+	height: Ti.UI.FILL,
+	right: 0,
+	backgroundColor: "#1f7f5c"
+}

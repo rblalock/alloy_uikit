@@ -22,10 +22,10 @@ $.params = arguments[0] || {};
  */
 $.theme = {
 	light: {
-		textfieldFocusedBackgroundColor: "#ddd8ce",
+		textfieldFocusedBackgroundColor: "#333",
 		textfieldFocusedColor: "#1f7f5c",
-		textfieldDefaultBackgroundColor: "#fff",
-		textfieldDefaultColor: "#111"
+		textfieldDefaultBackgroundColor: "#232323",
+		textfieldDefaultColor: "#eee"
 	},
 	dark: {
 		textfieldFocusedBackgroundColor: "#333",

@@ -1,7 +1,5 @@
 "#textfield": {
 	height: 44,
-	backgroundColor: "#fff",
-	color: "#111",
 	paddingLeft: 10,
 	paddingRight: 10,
 	font: {

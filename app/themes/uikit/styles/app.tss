@@ -61,5 +61,8 @@
 },
 ".uikit_success": {
 	color: "#468847"
+},
+".dark": {
+	color: "#eee"
 }
 // END TYPOGRAPHY
