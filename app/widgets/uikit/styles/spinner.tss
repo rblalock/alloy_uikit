@@ -16,7 +16,8 @@
 "#stepperWrapper": {
 	width: 22,
 	height: Ti.UI.FILL,
-	right: 0
+	right: 0,
+	bubbleParent: false
 },
 "#increment": {
 	width: 13,

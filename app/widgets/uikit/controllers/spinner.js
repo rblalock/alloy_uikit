@@ -7,13 +7,15 @@ var touchStartY = 0;
  * {
  *      style: {Object} Object of objects for styling UI by ID (can be used in .tss)
  *      textfieldFocused: {Object} UITextfield properties when TF is focused
+ *      stepperWrapperFocused: {Object} UIView properties
  * }
  * @example
  * {
  *      style: {
  *          "textfield": { backgroundColor: "#333", hintText: "textfield!" }
  *      },
- *      textfieldFocused: { backgroundColor: "white", color: "red" }
+ *      textfieldFocused: { backgroundColor: "white", color: "red" },
+ *      stepperWrapperFocused: { backgroundColor: "green" }
  * }
  */
 $.params = arguments[0] || {};
@@ -55,7 +57,7 @@ $.setUIKitDefaults = function() {
 
 	$.textfield.backgroundColor = $.selectedTheme.textfieldDefaultBackgroundColor;
 	$.textfield.color = $.selectedTheme.textfieldDefaultColor;
-	$.stepperWrapper.backgroundColor = $.selectedTheme.stepperWrapperDefaultBackgroundColor
+	$.stepperWrapper.backgroundColor = $.selectedTheme.stepperWrapperDefaultBackgroundColor;
 };
 /**
  * Handle incrementing / decrementing taps

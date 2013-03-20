@@ -31,4 +31,12 @@
 			left: 0
 		}
 	}
+},
+"#radio": {
+	styles: {
+		wrapper: {
+			width: Ti.UI.SIZE,
+			left: 0
+		}
+	}
 }
