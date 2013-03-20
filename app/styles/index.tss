@@ -1,0 +1,7 @@
+"#master[formFactor=tablet]": {
+	width: 320,
+	left: 0
+},
+"#detail[formFactor=tablet]": {
+	left: 320
+}

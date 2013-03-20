@@ -1,10 +1,14 @@
 "Window": {
 	backgroundColor: "#111"
 },
+"#wrapper": {
+	backgroundColor: "#111"
+},
 "#textfield": {
 	styles: {
 		textfield: {
 			width: 300,
+			left: 0,
             hintText: "textfield widget"
 		}
 	}

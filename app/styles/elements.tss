@@ -2,6 +2,7 @@
 	styles: {
 		textfield: {
 			width: 300,
+			left: 0,
             hintText: "textfield widget"
 		}
 	}
@@ -12,6 +13,7 @@
 			width: 300,
 			top: 5,
 			bottom: 5,
+			left: 0,
             hintText: "overriden textfield",
             backgroundColor: "#111",
             color: "#eee"

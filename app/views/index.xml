@@ -1,9 +1,23 @@
 <Alloy>
 	<Window id="window">
-		<TableView id="table">
-			<TableViewRow title="Typography" id="typography" />
-			<TableViewRow title="Elements - Light" id="elements" />
-			<TableViewRow title="Elements - Dark" id="elementsDark" />
-		</TableView>
+		<!-- iOS Handheld -->
+		<NavigationGroup id="navgroup" platform="ios" formFactor="handheld">
+			<Window id="screenWindow" title="Examples">
+				<Require id="indexList" src="indexTable" />
+			</Window>
+		</NavigationGroup>
+
+		<!-- Android Handheld -->
+		<View platform="android" formFactor="handheld">
+			<Require id="indexList" src="indexTable" />
+		</View>
+
+		<!-- Tablet -->
+		<View id="tabletWrapper" formFactor="tablet">
+			<View id="master">
+				<Require id="indexList" src="indexTable" />
+			</View>
+			<View id="detail" />
+		</View>
 	</Window>
 </Alloy>

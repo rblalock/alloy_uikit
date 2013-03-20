@@ -1,0 +1,7 @@
+<Alloy>
+	<TableView id="table">
+		<TableViewRow title="Typography" id="typography" />
+		<TableViewRow title="Elements - Light" id="elements" />
+		<TableViewRow title="Elements - Dark" id="elementsDark" />
+	</TableView>
+</Alloy>

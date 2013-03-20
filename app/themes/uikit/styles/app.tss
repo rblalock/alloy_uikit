@@ -1,3 +1,8 @@
+// General
+"Window[platform=ios]": {
+	barColor: "#232323"
+}
+
 // BEGIN TYPOGRAPHY
 "Label": {
 	font: {
@@ -64,5 +69,14 @@
 },
 ".dark": {
 	color: "#eee"
-}
+},
 // END TYPOGRAPHY
+
+// ICONS
+".uikit_arrowLeft": {
+	backgroundImage: "/uikit/arrowLeft.png",
+	width: 8,
+	height: 13
+}
+
+// END ICONS

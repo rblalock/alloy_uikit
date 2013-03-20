@@ -1,6 +1,7 @@
 <Alloy>
-	<Window id="window">
-		<ScrollView layout="vertical" top="10" right="10" bottom="10" left="10">
+	<ScrollView id="wrapper">
+		<View id="paddingView" layout="vertical" top="10" right="10" bottom="10" left="10">
+
 			<Label class="uikit_h1 dark" textAlign="left" width="Ti.UI.FILL">Fields.</Label>
 
 			<View class="spacer" />
@@ -10,6 +11,7 @@
 			<Widget theme="dark" id="textfield" src="uikit" name="textfield" />
 
 			<View class="spacer" />
-		</ScrollView>
-	</Window>
+
+		</View>
+	</ScrollView>
 </Alloy>
