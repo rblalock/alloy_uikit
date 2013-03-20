@@ -21,10 +21,14 @@ $.params = arguments[0] || {};
  */
 $.theme = {
 	light: {
-
+		radioSelectedBackgroundColor: "#1f7f5c",
+		radioDefaultBackgroundColor: "transparent",
+		radioLabelColor: "#222"
 	},
 	dark: {
-
+		radioSelectedBackgroundColor: "#1f7f5c",
+		radioDefaultBackgroundColor: "transparent",
+		radioLabelColor: "#eee"
 	}
 };
 /**
@@ -74,7 +78,8 @@ $.setData = function(_data) {
 			height: Ti.UI.SIZE,
 			left: 5,
 			font: { fontSize: 11 },
-			touchEnabled: false
+			touchEnabled: false,
+			color: $.selectedTheme.radioLabelColor
 		});
 
 		wrapper.add(radio);
@@ -112,19 +117,19 @@ $.handleClick = function(_event) {
 		// handle multiple choice vs. one choice scenarios
 		if($.params.radioType === "multiple") {
 			if(source.selected) {
-				radio.backgroundColor = "transparent";
+				radio.backgroundColor = $.selectedTheme.radioDefaultBackgroundColor;
 				source.selected = false;
 			} else {
-				radio.backgroundColor = "#1f7f5c";
+				radio.backgroundColor = $.selectedTheme.radioSelectedBackgroundColor;
 				source.selected = true;
 			}
 		} else {
 			$.radios.forEach(function(_radio) {
-				_radio.children[0].backgroundColor = "transparent";
+				_radio.children[0].backgroundColor = $.selectedTheme.radioDefaultBackgroundColor;
 				_radio.selected = false;
 			});
 
-			radio.backgroundColor = "#1f7f5c";
+			radio.backgroundColor = $.selectedTheme.radioSelectedBackgroundColor;
 			source.selected = true;
 		}
 	}
@@ -133,7 +138,6 @@ $.handleClick = function(_event) {
 /**
  * Init logic
  */
-$.params.radioFocused = $.params.radioFocused || {};
 
 // Setup events for this instance
 $.wrapper.addEventListener("click", $.handleClick);

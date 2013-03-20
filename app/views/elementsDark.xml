@@ -12,6 +12,9 @@
 
 			<View class="spacer" />
 
+			<!--Checkbox / Radio-->
+			<Label class="uikit_h3 dark" textAlign="left" width="Ti.UI.FILL">radios.</Label>
+			<Widget theme="dark" id="radio" src="uikit" name="radio" radioType="single" />
 		</View>
 	</ScrollView>
 </Alloy>
