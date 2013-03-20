@@ -28,13 +28,17 @@ $.theme = {
 		textfieldFocusedBackgroundColor: "#333",
 		textfieldFocusedColor: "#1f7f5c",
 		textfieldDefaultBackgroundColor: "#232323",
-		textfieldDefaultColor: "#eee"
+		textfieldDefaultColor: "#eee",
+		stepperWrapperFocusedBackgroundColor: "#232323",
+		stepperWrapperDefaultBackgroundColor: "#1f7f5c"
 	},
 	dark: {
 		textfieldFocusedBackgroundColor: "#333",
 		textfieldFocusedColor: "#1f7f5c",
 		textfieldDefaultBackgroundColor: "#232323",
-		textfieldDefaultColor: "#eee"
+		textfieldDefaultColor: "#eee",
+		stepperWrapperFocusedBackgroundColor: "#232323",
+		stepperWrapperDefaultBackgroundColor: "#1f7f5c"
 	}
 };
 /**
@@ -51,6 +55,7 @@ $.setUIKitDefaults = function() {
 
 	$.textfield.backgroundColor = $.selectedTheme.textfieldDefaultBackgroundColor;
 	$.textfield.color = $.selectedTheme.textfieldDefaultColor;
+	$.stepperWrapper.backgroundColor = $.selectedTheme.stepperWrapperDefaultBackgroundColor
 };
 /**
  * Handle incrementing / decrementing taps
@@ -98,15 +103,19 @@ $.touchMoveHandler = function(_event) {
  */
 $.params.textfieldFocused = $.params.textfieldFocused || {};
 $.params.styles.textfield = $.params.styles.textfield || {};
+$.params.styles.stepperWrapper = $.params.styles.stepperWrapper || {};
+$.params.stepperWrapperFocused = $.params.stepperWrapperFocused || {};
 
 // Setup events for this instance
 $.textfield.addEventListener("focus", function() {
 	$.textfield.backgroundColor = $.params.textfieldFocused.backgroundColor || $.selectedTheme.textfieldFocusedBackgroundColor;
 	$.textfield.color = $.params.textfieldFocused.color || $.selectedTheme.textfieldFocusedColor;
+	$.stepperWrapper.backgroundColor = $.params.stepperWrapperFocused.backgroundColor || $.selectedTheme.stepperWrapperFocusedBackgroundColor
 });
 $.textfield.addEventListener("blur", function() {
 	$.textfield.backgroundColor = $.params.styles.textfield.backgroundColor || $.selectedTheme.textfieldDefaultBackgroundColor;
 	$.textfield.color = $.params.styles.textfield.color || $.selectedTheme.textfieldDefaultColor;
+	$.stepperWrapper.backgroundColor = $.params.styles.stepperWrapper.backgroundColor || $.selectedTheme.stepperWrapperDefaultBackgroundColor
 });
 $.stepperWrapper.addEventListener("click", $.incDecHandler);
 $.stepperWrapper.addEventListener("touchstart", $.touchStartHandler);

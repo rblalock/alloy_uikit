@@ -16,20 +16,19 @@
 "#stepperWrapper": {
 	width: 22,
 	height: Ti.UI.FILL,
-	right: 0,
-	backgroundColor: "#1f7f5c"
+	right: 0
 },
 "#increment": {
 	width: 13,
 	height: 8,
-	top: 8,
+	top: 6,
 	backgroundImage: "/uikit/arrowUp.png",
 	touchEnabled: false
 },
 "#decrement": {
 	width: 13,
 	height: 8,
-	bottom: 8,
+	bottom: 6,
 	backgroundImage: "/uikit/arrowDown.png",
 	touchEnabled: false
 }
