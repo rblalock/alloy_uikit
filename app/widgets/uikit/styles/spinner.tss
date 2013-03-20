@@ -3,6 +3,7 @@
 	height: 44
 },
 "#textfield": {
+	value: 1,
 	width: Ti.UI.FILL,
 	height: Ti.UI.FILL,
 	paddingLeft: 10,
@@ -17,4 +18,18 @@
 	height: Ti.UI.FILL,
 	right: 0,
 	backgroundColor: "#1f7f5c"
+},
+"#increment": {
+	width: 13,
+	height: 8,
+	top: 8,
+	backgroundImage: "/uikit/arrowUp.png",
+	touchEnabled: false
+},
+"#decrement": {
+	width: 13,
+	height: 8,
+	bottom: 8,
+	backgroundImage: "/uikit/arrowDown.png",
+	touchEnabled: false
 }

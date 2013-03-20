@@ -53,7 +53,9 @@ $.setUIKitDefaults = function() {
 /**
  * Init logic
  */
+// TODO There's gotta be a better way than declaring this all the time.  So annoying.
 $.params.textfieldFocused = $.params.textfieldFocused || {};
+$.params.styles.textfield = $.params.styles.textfield || {};
 
 // Setup events for this instance
 $.textfield.addEventListener("focus", function() {

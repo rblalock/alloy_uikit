@@ -1,3 +1,6 @@
+// Private properties
+var touchStartY = 0;
+
 /**
  * Params for this instance
  * @type {Object}
@@ -49,11 +52,52 @@ $.setUIKitDefaults = function() {
 	$.textfield.backgroundColor = $.selectedTheme.textfieldDefaultBackgroundColor;
 	$.textfield.color = $.selectedTheme.textfieldDefaultColor;
 };
+/**
+ * Handle incrementing / decrementing taps
+ * @param {Object} _event
+ */
+$.incDecHandler = function(_event) {
+	var value = parseInt($.textfield.value.toString()); // for weird android issue
+	var tapPoint = _event.y; // Relative tap point
+	var threshold = $.stepperWrapper.size.height / 2; // Middle point for increment / decrement taps
+
+	if(tapPoint < threshold) {
+		$.textfield.value = (parseFloat(value) + 1);
+	} else if(tapPoint > threshold && value > 0) {
+		$.textfield.value = (parseFloat(value) - 1);
+	}
+};
+/**
+ * Touch start handler
+ * @param {Object} _event
+ */
+$.touchStartHandler = function(_event) {
+	touchStartY = parseInt(_event.y);
+};
+/**
+ * Touch move handler
+ * @param {Object} _event
+ */
+$.touchMoveHandler = function(_event) {
+	var coordinates = parseInt(_event.y);
+	var value = parseInt($.textfield.value.toString()); // for weird android bug
+
+	if(coordinates < touchStartY && coordinates > 0) {
+		$.textfield.value = (parseFloat(value) + coordinates);
+	} else if(coordinates > touchStartY && coordinates < $.stepperWrapper.size.height && value > 0) {
+		$.textfield.value = (parseFloat(value) - coordinates);
+	}
+
+	if(value < 0) {
+		$.textfield.value = 0;
+	}
+};
 
 /**
  * Init logic
  */
 $.params.textfieldFocused = $.params.textfieldFocused || {};
+$.params.styles.textfield = $.params.styles.textfield || {};
 
 // Setup events for this instance
 $.textfield.addEventListener("focus", function() {
@@ -64,3 +108,6 @@ $.textfield.addEventListener("blur", function() {
 	$.textfield.backgroundColor = $.params.styles.textfield.backgroundColor || $.selectedTheme.textfieldDefaultBackgroundColor;
 	$.textfield.color = $.params.styles.textfield.color || $.selectedTheme.textfieldDefaultColor;
 });
+$.stepperWrapper.addEventListener("click", $.incDecHandler);
+$.stepperWrapper.addEventListener("touchstart", $.touchStartHandler);
+$.stepperWrapper.addEventListener("touchmove", $.touchMoveHandler);

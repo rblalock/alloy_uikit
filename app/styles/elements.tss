@@ -27,9 +27,6 @@
 		wrapper: {
 			width: 100,
 			left: 0
-		},
-		textfield: {
-            hintText: "spinner widget"
 		}
 	}
 }

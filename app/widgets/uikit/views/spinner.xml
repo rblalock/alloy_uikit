@@ -1,6 +1,9 @@
 <Alloy>
 	<View id="wrapper">
 		<TextField id="textfield" />
-		<View id="stepperWrapper" />
+		<View id="stepperWrapper">
+			<View id="increment" />
+			<View id="decrement" />
+		</View>
 	</View>
 </Alloy>
