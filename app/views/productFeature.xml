@@ -1,0 +1,6 @@
+<Alloy>
+	<ScrollView id="wrapper" layout="vertical" top="10" right="10" bottom="10" left="10">
+		<Label class="uikit_h3" textAlign="left" width="Ti.UI.FILL">featured product.</Label>
+		<Widget id="productFeature" src="uikit" name="productFeature" />
+	</ScrollView>
+</Alloy>

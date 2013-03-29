@@ -1,0 +1,54 @@
+"#wrapper": {
+	backgroundColor: "#232323",
+	layout: "vertical,"
+},
+"#header": {
+	height: 50,
+	top: 0
+},
+"#table": {
+	top: 50,
+	backgroundColor: "transparent",
+	separatorColor: "#444"
+},
+"#title": {
+	color: "#eee",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	left: 10,
+	font: { fontWeight: "bold", fontSize: 18 }
+},
+"#resultWrapper": {
+	width: Ti.UI.SIZE,
+	layout: "horizontal",
+	right: 0
+},
+"#resultCount": {
+	color: "#555",
+	width: Ti.UI.SIZE
+},
+".navSeparator": {
+	width: 1,
+	left: 10,
+	right: 10,
+	backgroundColor: "#444"
+},
+"#previousBtn": {
+	width: 8,
+	height: 13,
+	left: 10,
+	right: 10,
+	backgroundImage: "/uikit/arrowBack.png"
+},
+"#nextBtn": {
+	width: 8,
+	height: 13,
+	left: 10,
+    right: 20,
+	backgroundImage: "/uikit/arrowForward.png"
+},
+"#border": {
+	height: 1,
+	backgroundColor: "#444",
+	bottom: 0
+}

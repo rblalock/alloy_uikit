@@ -1,0 +1,10 @@
+<Alloy>
+	<View id="wrapper">
+		<ImageView id="image" />
+		<Label id="price" />
+		<View id="separator" />
+		<Label id="title" />
+		<Label id="description" />
+		<Button id="button" title="Add to Cart" />
+	</View>
+</Alloy>

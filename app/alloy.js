@@ -15,9 +15,9 @@ Alloy.createWidget = function(id, name, args) {
 	}
 	
 	// Workaround for styling widgets until the feature is implemented in Alloy
-	if (args.styles) {
-		for(var property in args.styles) {
-			var value = args.styles[property];
+	if (args.uikit_styles) {
+		for(var property in args.uikit_styles) {
+			var value = args.uikit_styles[property];
 			if (typeof value === 'object') {
 				widget[property].applyProperties(value);
 			}

@@ -6,4 +6,5 @@ var radioData = [
 	{ id: 4, title: "Option 4" },
 	{ id: 5, title: "Option 5" }
 ];
+
 $.radio.setData( radioData );

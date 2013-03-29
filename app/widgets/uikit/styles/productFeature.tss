@@ -1,0 +1,58 @@
+"#wrapper": {
+	layout: "vertical",
+	backgroundColor: "#232323",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE
+},
+"#image": {
+	height: 115,
+	top: 10,
+	right: 10,
+	left: 10,
+	bottom: 10,
+	touchEnabled: false
+},
+"#price": {
+	color: "#eee",
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	right: 10,
+	bottom: 10,
+	font: { fontWeight: "bold", fontSize: 24 },
+	touchEnabled: false
+},
+"#separator": {
+	height: 1,
+	backgroundColor: "#444",
+	touchEnabled: false
+},
+"#title": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#eee",
+	top: 15,
+	right: 20,
+	left: 20,
+	bottom: 15,
+	textAlign: "left",
+	font: { fontWeight: "bold", fontSize: 16 },
+	touchEnabled: false
+},
+"#description": {
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+	color: "#999",
+    right: 20,
+    left: 20,
+    bottom: 20,
+    textAlign: "left",
+    touchEnabled: false
+},
+"#button": {
+	color: "#eee",
+	backgroundColor: "#227C5B",
+	backgroundImage: "transparent",
+	width: "100%",
+	height: 50,
+	font: { fontWeight: "bold" }
+}

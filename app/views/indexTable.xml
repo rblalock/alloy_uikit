@@ -3,5 +3,7 @@
 		<TableViewRow title="Typography" id="typography" />
 		<TableViewRow title="Elements - Light" id="elements" />
 		<TableViewRow title="Elements - Dark" id="elementsDark" />
+		<TableViewRow title="Product Feature" id="productFeature" />
+		<TableViewRow title="Message Grid" id="messageGrid" />
 	</TableView>
 </Alloy>

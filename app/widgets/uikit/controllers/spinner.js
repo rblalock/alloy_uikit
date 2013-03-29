@@ -5,13 +5,13 @@ var touchStartY = 0;
  * Params for this instance
  * @type {Object}
  * {
- *      style: {Object} Object of objects for styling UI by ID (can be used in .tss)
+ *      uikit_styles: {Object} Object of objects for styling UI by ID (can be used in .tss)
  *      textfieldFocused: {Object} UITextfield properties when TF is focused
  *      stepperWrapperFocused: {Object} UIView properties
  * }
  * @example
  * {
- *      style: {
+ *      uikit_styles: {
  *          "textfield": { backgroundColor: "#333", hintText: "textfield!" }
  *      },
  *      textfieldFocused: { backgroundColor: "white", color: "red" },
@@ -104,8 +104,8 @@ $.touchMoveHandler = function(_event) {
  * Init logic
  */
 $.params.textfieldFocused = $.params.textfieldFocused || {};
-$.params.styles.textfield = $.params.styles.textfield || {};
-$.params.styles.stepperWrapper = $.params.styles.stepperWrapper || {};
+$.params.uikit_styles.textfield = $.params.uikit_styles.textfield || {};
+$.params.uikit_styles.stepperWrapper = $.params.uikit_styles.stepperWrapper || {};
 $.params.stepperWrapperFocused = $.params.stepperWrapperFocused || {};
 
 // Setup events for this instance
@@ -115,9 +115,9 @@ $.textfield.addEventListener("focus", function() {
 	$.stepperWrapper.backgroundColor = $.params.stepperWrapperFocused.backgroundColor || $.selectedTheme.stepperWrapperFocusedBackgroundColor
 });
 $.textfield.addEventListener("blur", function() {
-	$.textfield.backgroundColor = $.params.styles.textfield.backgroundColor || $.selectedTheme.textfieldDefaultBackgroundColor;
-	$.textfield.color = $.params.styles.textfield.color || $.selectedTheme.textfieldDefaultColor;
-	$.stepperWrapper.backgroundColor = $.params.styles.stepperWrapper.backgroundColor || $.selectedTheme.stepperWrapperDefaultBackgroundColor
+	$.textfield.backgroundColor = $.params.uikit_styles.textfield.backgroundColor || $.selectedTheme.textfieldDefaultBackgroundColor;
+	$.textfield.color = $.params.uikit_styles.textfield.color || $.selectedTheme.textfieldDefaultColor;
+	$.stepperWrapper.backgroundColor = $.params.uikit_styles.stepperWrapper.backgroundColor || $.selectedTheme.stepperWrapperDefaultBackgroundColor
 });
 $.stepperWrapper.addEventListener("click", $.incDecHandler);
 $.stepperWrapper.addEventListener("touchstart", $.touchStartHandler);

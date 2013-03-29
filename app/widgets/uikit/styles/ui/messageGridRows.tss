@@ -1,0 +1,37 @@
+"TableViewRow": {
+	height: 45
+},
+"Label": {
+	textAlign: "left",
+	color: "#eee",
+	height: 45,
+	font: { fontWeight: "bold", fontSize: 12 }
+},
+"#wrapper": {
+	layout: "horizontal"
+},
+".separator": {
+	width: 1,
+	backgroundColor: "#444",
+	left: 15,
+	right: 15
+},
+"#readWrapper": {
+	width: Ti.UI.SIZE
+},
+"#readIcon": {
+	width: 17,
+	height: 16,
+	left: 15,
+	right: 15,
+	backgroundImage: "/uikit/check.png"
+},
+"#from[formFactor=tablet]": {
+	width: "20%"
+},
+"#subject": {
+	width: "45%"
+},
+"#date": {
+	textAlign: "right"
+}

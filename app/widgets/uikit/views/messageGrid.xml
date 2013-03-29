@@ -1,0 +1,21 @@
+<Alloy>
+	<View id="wrapper">
+		<View id="header">
+			<Label id="title" />
+
+			<View id="resultWrapper">
+				<Label id="resultCount" />
+
+				<View class="navSeparator" />
+
+				<View id="previousBtn" />
+				<View class="navSeparator" />
+				<View id="nextBtn" />
+			</View>
+
+			<View id="border" />
+		</View>
+
+		<TableView id="table" />
+	</View>
+</Alloy>

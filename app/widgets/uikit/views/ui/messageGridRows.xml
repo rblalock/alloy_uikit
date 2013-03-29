@@ -1,0 +1,21 @@
+<Alloy>
+	<TableViewRow id="row">
+		<View id="wrapper">
+			<View id="readWrapper">
+				<View id="readIcon" />
+			</View>
+
+			<View class="separator" left="0" />
+
+			<Label id="from" />
+
+			<View class="separator" formFactor="tablet" />
+
+			<Label id="subject" formFactor="tablet" />
+
+			<View class="separator" formFactor="tablet" />
+
+			<Label id="date" formFactor="tablet" />
+		</View>
+	</TableViewRow>
+</Alloy>

@@ -2,12 +2,12 @@
  * Params for this instance
  * @type {Object}
  * {
- *      style: {Object} Object of objects for styling UI by ID (can be used in .tss)
+ *      uikit_style: {Object} Object of objects for styling UI by ID (can be used in .tss)
  *      textfieldFocused: {Object} UITextfield properties when TF is focused
  * }
  * @example
  * {
- *      style: {
+ *      uikit_style: {
  *          "textfield": { backgroundColor: "#333", hintText: "textfield!" }
  *      },
  *      textfieldFocused: { backgroundColor: "white", color: "red" }
@@ -55,7 +55,7 @@ $.setUIKitDefaults = function() {
  */
 // TODO There's gotta be a better way than declaring this all the time.  So annoying.
 $.params.textfieldFocused = $.params.textfieldFocused || {};
-$.params.styles.textfield = $.params.styles.textfield || {};
+$.params.uikit_styles.textfield = $.params.uikit_styles.textfield || {};
 
 // Setup events for this instance
 $.textfield.addEventListener("focus", function() {
@@ -63,6 +63,6 @@ $.textfield.addEventListener("focus", function() {
 	$.textfield.color = $.params.textfieldFocused.color || $.selectedTheme.textfieldFocusedColor;
 });
 $.textfield.addEventListener("blur", function() {
-	$.textfield.backgroundColor = $.params.styles.textfield.backgroundColor || $.selectedTheme.textfieldDefaultBackgroundColor;
-	$.textfield.color = $.params.styles.textfield.color || $.selectedTheme.textfieldDefaultColor;
+	$.textfield.backgroundColor = $.params.uikit_styles.textfield.backgroundColor || $.selectedTheme.textfieldDefaultBackgroundColor;
+	$.textfield.color = $.params.uikit_styles.textfield.color || $.selectedTheme.textfieldDefaultColor;
 });

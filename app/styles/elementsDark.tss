@@ -5,7 +5,7 @@
 	backgroundColor: "#111"
 },
 "#textfield": {
-	styles: {
+	uikit_styles: {
 		textfield: {
 			width: 300,
 			left: 0,
